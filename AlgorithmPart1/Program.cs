@@ -30,6 +30,10 @@ namespace AlgorithmPart1
             //var reverseIntegerVal = ReverseInteger.Reverse(123);
             //Console.WriteLine(reverseIntegerVal);
 
+            // **** 9. Algorithm: Integer Palindrome ****//
+            //var isPalindrome = IntegerPalindrome.IsPalindrome(0);
+            //Console.WriteLine(isPalindrome);
+
             Console.Read();
         }
     }
