@@ -1,0 +1,9 @@
+D:\LeetCodeAlgorithm\AlgorithmPart1\bin\Debug\netcoreapp1.0\AlgorithmPart1.deps.json
+D:\LeetCodeAlgorithm\AlgorithmPart1\bin\Debug\netcoreapp1.0\AlgorithmPart1.runtimeconfig.json
+D:\LeetCodeAlgorithm\AlgorithmPart1\bin\Debug\netcoreapp1.0\AlgorithmPart1.runtimeconfig.dev.json
+D:\LeetCodeAlgorithm\AlgorithmPart1\bin\Debug\netcoreapp1.0\AlgorithmPart1.dll
+D:\LeetCodeAlgorithm\AlgorithmPart1\bin\Debug\netcoreapp1.0\AlgorithmPart1.pdb
+D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp1.0\AlgorithmPart1.AssemblyInfoInputs.cache
+D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp1.0\AlgorithmPart1.AssemblyInfo.cs
+D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp1.0\AlgorithmPart1.dll
+D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp1.0\AlgorithmPart1.pdb
