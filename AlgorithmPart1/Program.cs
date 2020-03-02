@@ -34,6 +34,10 @@ namespace AlgorithmPart1
             //var isPalindrome = IntegerPalindrome.IsPalindrome(0);
             //Console.WriteLine(isPalindrome);
 
+            //****10.Algorithm: Regular Expression Match ****//
+            var ismatch = RegularExpressionMatching.IsMatch("ab",".*c");
+            Console.WriteLine(ismatch);
+
             Console.Read();
         }
     }
