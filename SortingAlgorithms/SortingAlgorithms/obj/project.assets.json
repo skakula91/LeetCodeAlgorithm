@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LeetCodeAlgorithm\\AlgorithmPart1\\AlgorithmPart1.csproj",
-      "projectName": "AlgorithmPart1",
-      "projectPath": "D:\\LeetCodeAlgorithm\\AlgorithmPart1\\AlgorithmPart1.csproj",
+      "projectUniqueName": "D:\\LeetCodeAlgorithm\\SortingAlgorithms\\SortingAlgorithms\\SortingAlgorithms.csproj",
+      "projectName": "SortingAlgorithms",
+      "projectPath": "D:\\LeetCodeAlgorithm\\SortingAlgorithms\\SortingAlgorithms\\SortingAlgorithms.csproj",
       "packagesPath": "C:\\Users\\saiki\\.nuget\\packages\\",
-      "outputPath": "D:\\LeetCodeAlgorithm\\AlgorithmPart1\\obj\\",
+      "outputPath": "D:\\LeetCodeAlgorithm\\SortingAlgorithms\\SortingAlgorithms\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\saiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
