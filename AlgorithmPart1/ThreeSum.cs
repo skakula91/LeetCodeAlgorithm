@@ -38,7 +38,7 @@ namespace AlgorithmPart1
                     List<int> ls = new List<int>();
                     if (index > 1 && i != j)
                     {
-                        if()
+                        //if()
                         dict[nums[i]] = dict[nums[i]] - 1;
                         dict[nums[j]] = dict[nums[j]] - 1;
                         ls.Add(nums[i]);
