@@ -38,6 +38,11 @@ namespace AlgorithmPart1
             var ismatch = RegularExpressionMatching.IsMatch("ab",".*c");
             Console.WriteLine(ismatch);
 
+            //****11.Three sum ****//
+            int[] array = { -1, 0, 1, 2, -1, -4 };
+            var list = ThreeSum.ThreeSums(array);
+           // Console.WriteLine(ismatch);
+
             Console.Read();
         }
     }
