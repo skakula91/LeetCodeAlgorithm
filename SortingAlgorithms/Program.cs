@@ -17,7 +17,12 @@ namespace SortingAlgorithms
 
             //****3. Merge sort ****//
             // Time complexity : O(nlogn)
-            MergeSort.Sort(array, 0, array.Length -1);
+            //MergeSort.Sort(array, 0, array.Length -1);
+
+            //****4. Quick sort ****//
+            // Time complexity best case: O(nlogn)
+            // Time complexity best case: O(n^2)
+            QuickSort.Sort(array, 0, array.Length - 1);
             for (int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine(array[i]);
