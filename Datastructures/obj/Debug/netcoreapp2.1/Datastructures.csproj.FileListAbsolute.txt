@@ -1,0 +1,9 @@
+D:\LeetCodeAlgorithm\Datastructures\bin\Debug\netcoreapp2.1\Datastructures.deps.json
+D:\LeetCodeAlgorithm\Datastructures\bin\Debug\netcoreapp2.1\Datastructures.runtimeconfig.json
+D:\LeetCodeAlgorithm\Datastructures\bin\Debug\netcoreapp2.1\Datastructures.runtimeconfig.dev.json
+D:\LeetCodeAlgorithm\Datastructures\bin\Debug\netcoreapp2.1\Datastructures.dll
+D:\LeetCodeAlgorithm\Datastructures\bin\Debug\netcoreapp2.1\Datastructures.pdb
+D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.AssemblyInfoInputs.cache
+D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.AssemblyInfo.cs
+D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.dll
+D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.pdb
