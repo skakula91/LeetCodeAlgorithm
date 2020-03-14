@@ -44,9 +44,26 @@ namespace AlgorithmPart1
             // Console.WriteLine(ismatch);
 
             //****12.Increasing Decreasing String ****//
-            String s = "vrwhhkaydscvllvcsdyakhhwrv";
-             var str = IncreasingDecreasingString.SortString(s);
-            Console.WriteLine(str);
+            //String s = "vrwhhkaydscvllvcsdyakhhwrv";
+            //var str = IncreasingDecreasingString.SortString(s);
+            //Console.WriteLine(str);
+
+            //****13.Reverse string ****//
+            //String s = "teststring";
+            //var str = ReverseString.Reverse(s, 2);
+            //Console.WriteLine(str);
+
+            //****14.Group anagrams****//
+            String[] s = {"eat", "tea", "tan", "ate", "nat", "bat"};
+            var anagramLst = GroupAnagrams.Anagram(s);
+            foreach(var val in anagramLst)
+            {
+                foreach(String str in val)
+                {
+                    Console.WriteLine(str);
+                }
+            }
+           
             Console.Read();
         }
     }
