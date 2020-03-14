@@ -9,7 +9,7 @@ namespace AlgorithmPart1
     {
         public static string SortString(string s)
         {
-            SortedDictionary<char, int> sortedDict = new SortedDictionary<char, int>();
+            SortedList<char, int> sortedDict = new SortedList<char, int>();
             int i;
             for (i = 0; i < s.Length; i++)
             {
@@ -23,44 +23,33 @@ namespace AlgorithmPart1
                 }
             }
             StringBuilder sb = new StringBuilder();
-            int count = 0;
+            int count = s.Length;
             i = 0;
             int j = sortedDict.Count - 1;
-            while (count <= sortedDict.Count - 1)
+            while (count != 0)
             {
-
                 for (i = 0; i <= j; i++)
                 {
                     char key = sortedDict.ElementAt(i).Key;
-                    if (sortedDict[key] != -1)
+                    if (sortedDict[key] != 0)
                     {
-                        if (sortedDict[key] == 0)
-                        {
-                            sortedDict[key] = -1;
-                            count++;
-                        }
-                        else
-                        {
-                            sortedDict[key] = sortedDict[key] - 1;
-                            sb.Append(key);
-                        }
+                        sb.Append(key);
+                        sortedDict[key] = sortedDict[key] - 1;
+                        count--;
+                        if (count == 0)
+                            break;
                     }
                 }
                 for (int k = j; k >= 0; k--)
                 {
                     char key = sortedDict.ElementAt(k).Key;
-                    if (sortedDict[key] != -1)
+                    if (sortedDict[key] != 0)
                     {
-                        if (sortedDict[key] == 0)
-                        {
-                            sortedDict[key] = -1;
-                            count++;
-                        }
-                        else
-                        {
-                            sortedDict[key] = sortedDict[key] - 1;
-                            sb.Append(key);
-                        }
+                        sb.Append(key);
+                        sortedDict[key] = sortedDict[key] - 1;
+                        count--;
+                        if (count == 0)
+                            break;
                     }
                 }
             }
