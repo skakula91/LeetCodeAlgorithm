@@ -35,14 +35,18 @@ namespace AlgorithmPart1
             //Console.WriteLine(isPalindrome);
 
             //****10.Algorithm: Regular Expression Match ****//
-            var ismatch = RegularExpressionMatching.IsMatch("ab",".*c");
-            Console.WriteLine(ismatch);
+            // var ismatch = RegularExpressionMatching.IsMatch("ab",".*c");
+            //Console.WriteLine(ismatch);
 
             //****11.Three sum ****//
-            int[] array = { -1, 0, 1, 2, -1, -4 };
-            var list = ThreeSum.ThreeSums(array);
-           // Console.WriteLine(ismatch);
+            // int[] array = { -1, 0, 1, 2, -1, -4 };
+            //var list = ThreeSum.ThreeSums(array);
+            // Console.WriteLine(ismatch);
 
+            //****12.Increasing Decreasing String ****//
+            String s = "vrwhhkaydscvllvcsdyakhhwrv";
+             var str = IncreasingDecreasingString.SortString(s);
+            Console.WriteLine(str);
             Console.Read();
         }
     }
