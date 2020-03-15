@@ -54,16 +54,19 @@ namespace AlgorithmPart1
             //Console.WriteLine(str);
 
             //****14.Group anagrams****//
-            String[] s = {"eat", "tea", "tan", "ate", "nat", "bat"};
-            var anagramLst = GroupAnagrams.Anagram(s);
-            foreach(var val in anagramLst)
-            {
-                foreach(String str in val)
-                {
-                    Console.WriteLine(str);
-                }
-            }
-           
+            //String[] s = {"eat", "tea", "tan", "ate", "nat", "bat"};
+            //var anagramLst = GroupAnagrams.Anagram(s);
+            //foreach(var val in anagramLst)
+            //{
+            //    foreach(String str in val)
+            //    {
+            //        Console.WriteLine(str);
+            //    }
+            //}
+
+            //****15.Binary gap ****//
+            var gap = BinaryGap.Gap(5);
+            Console.WriteLine(gap);
             Console.Read();
         }
     }
