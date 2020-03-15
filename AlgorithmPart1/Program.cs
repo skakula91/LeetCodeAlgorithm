@@ -65,8 +65,14 @@ namespace AlgorithmPart1
             //}
 
             //****15.Binary gap ****//
-            var gap = BinaryGap.Gap(5);
-            Console.WriteLine(gap);
+            //var gap = BinaryGap.Gap(5);
+            //Console.WriteLine(gap);
+
+            //****16.Search in Rotated Sorted Array****//
+            int[] a = {4, 5, 6, 7, 0, 1, 2};
+            var index = SearchinRotatedSortedArray.Search(a, 0);
+            Console.WriteLine(index);
+
             Console.Read();
         }
     }
