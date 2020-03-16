@@ -28,8 +28,8 @@ namespace SortingAlgorithms
             //    Console.WriteLine(array[i]);
             //}
 
-            int[] array1 = {-1, 0, 3, 5, 9, 12};
-            int index = BinarySearch.Search(array1, 9);
+            int[] array1 = { 4, 5, 6, 7, 0, 1, 2 };
+            int index = BinarySearch.Search(array1, 0);
             Console.WriteLine(index);
 
             Console.Read();
