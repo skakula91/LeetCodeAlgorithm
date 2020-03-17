@@ -69,9 +69,13 @@ namespace AlgorithmPart1
             //Console.WriteLine(gap);
 
             //****16.Search in Rotated Sorted Array****//
-            int[] a = {4, 5, 6, 7, 0, 1, 2};
-            var index = SearchinRotatedSortedArray.Search(a, 0);
-            Console.WriteLine(index);
+            //int[] a = {4, 5, 6, 7, 0, 1, 2};
+            //var index = SearchinRotatedSortedArray.Search(a, 0);
+            //Console.WriteLine(index);
+
+            //****17.Search in Rotated Sorted Array****//
+            var str = ReorganizeString.Reorganize("aaabbc");
+            Console.WriteLine(str);
 
             Console.Read();
         }
