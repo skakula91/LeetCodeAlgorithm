@@ -119,10 +119,20 @@ namespace Datastructures
                 root.right = InsertMirror(root.right, data);
             }
             return root;
+        }
+        // Height of a Binary Tree
+        public int FindHeight(BNode root)
+        {
+            if (root == null)
+                return -1;
 
+            int leftCount = FindHeight(root.left);
+            int rightCount = FindHeight(root.right);
+            return Math.Max(leftCount, rightCount) +1;
 
         }
     }
+   
     public class BNode
     {
         public int data;

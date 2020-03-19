@@ -7,13 +7,13 @@ namespace Datastructures
     {
         static void Main(string[] args)
         {
-            //BNode bnode = null;
-            //BinaryTree bTree = new BinaryTree();
-            //bnode = bTree.Insert(bnode, 4);
-            //bnode = bTree.Insert(bnode, 2);
-            //bnode = bTree.Insert(bnode, 1);
-            //bnode = bTree.Insert(bnode, 3);
-            //bnode = bTree.Insert(bnode, 5);
+            BNode bnode = null;
+            BinaryTree bTree = new BinaryTree();
+            bnode = bTree.Insert(bnode, 4);
+            bnode = bTree.Insert(bnode, 2);
+            bnode = bTree.Insert(bnode, 1);
+            bnode = bTree.Insert(bnode, 3);
+            bnode = bTree.Insert(bnode, 5);
 
             //bool isAvailable = bTree.Search(bnode, 22);
             //if (isAvailable)
@@ -37,35 +37,38 @@ namespace Datastructures
             // mirrorNode = bTree.Mirror(bnode,mirrorNode);
             // bTree.PreOrder(mirrorNode);
 
-            ListNode lstNode = null;
-            LinkedList linkedList = new LinkedList();
-            lstNode = linkedList.Insert(lstNode, 4);
-            lstNode = linkedList.Insert(lstNode, 2);
-            lstNode = linkedList.Insert(lstNode, 1);
+            //ListNode lstNode = null;
+            //LinkedList linkedList = new LinkedList();
+            //lstNode = linkedList.Insert(lstNode, 4);
+            //lstNode = linkedList.Insert(lstNode, 2);
+            //lstNode = linkedList.Insert(lstNode, 1);
 
-            ListNode lstNode2 = null;
-            lstNode2 = linkedList.Insert(lstNode2, 3);
-            lstNode2 = linkedList.Insert(lstNode2, 5);
-            lstNode2 = linkedList.Insert(lstNode2, 1);
+            //ListNode lstNode2 = null;
+            //lstNode2 = linkedList.Insert(lstNode2, 3);
+            //lstNode2 = linkedList.Insert(lstNode2, 5);
+            //lstNode2 = linkedList.Insert(lstNode2, 1);
 
-            ListNode lstNode3 = null;
-            lstNode3 = linkedList.Insert(lstNode3, 2);
-            lstNode3 = linkedList.Insert(lstNode3, 6);
-            lstNode3 = linkedList.Insert(lstNode3, 1);
+            //ListNode lstNode3 = null;
+            //lstNode3 = linkedList.Insert(lstNode3, 2);
+            //lstNode3 = linkedList.Insert(lstNode3, 6);
+            //lstNode3 = linkedList.Insert(lstNode3, 1);
 
-            //lstNode = linkedList.RemoveElements(lstNode,1);
-            List<ListNode> lst = new List<ListNode>();
-            lst.Add(lstNode);
-            lst.Add(lstNode2);
-            lst.Add(lstNode3);
+            ////lstNode = linkedList.RemoveElements(lstNode,1);
+            //List<ListNode> lst = new List<ListNode>();
+            //lst.Add(lstNode);
+            //lst.Add(lstNode2);
+            //lst.Add(lstNode3);
 
-            var sortedLstNode = MergeKsortedArrays.MergeKLists(lst.ToArray());
+            //var sortedLstNode = MergeKsortedArrays.MergeKLists(lst.ToArray());
 
-            while (sortedLstNode != null)
-            {
-                Console.WriteLine(sortedLstNode.val);
-                sortedLstNode = sortedLstNode.next;
-            }
+            //while (sortedLstNode != null)
+            //{
+            //    Console.WriteLine(sortedLstNode.val);
+            //    sortedLstNode = sortedLstNode.next;
+            //}
+
+            var height = bTree.FindHeight(bnode);
+            Console.WriteLine(height);
             Console.ReadKey();
         }
     }
