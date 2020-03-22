@@ -86,6 +86,11 @@ namespace AlgorithmPart1
             //int element = new KthLargestNuminArr().FindKthLargest(a,2);
             //Console.WriteLine(element);
 
+            //****20.Meeting Rooms****//
+            int[][] meetings = { new int[] {7,10 } , new int[] {2, 4 } };
+            bool canAttend = MeetingRooms.CanAttendMeetings(meetings);
+            Console.WriteLine(canAttend);
+
             Console.Read();
         }
     }
