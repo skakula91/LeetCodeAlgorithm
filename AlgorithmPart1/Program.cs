@@ -7,8 +7,8 @@ namespace AlgorithmPart1
         static void Main(string[] args)
         {
             // **** 1. Algorithm: Two sum ****//
-            //int[] a = {2,7,11,15};
-            //var value = TwoSum.Sum(a, 9);
+            //int[] a = { 2, 7,5,11, 15 };
+            //var value = TwoSum.Sum(a,12);
             //Console.WriteLine(value[0] + " " + value[1]);
 
             // **** 3. Algorithm: Length of Longest Substring ****//
@@ -74,8 +74,17 @@ namespace AlgorithmPart1
             //Console.WriteLine(index);
 
             //****17.Search in Rotated Sorted Array****//
-            var str = ReorganizeString.Reorganize("aaabbc");
-            Console.WriteLine(str);
+            //var str = ReorganizeString.Reorganize("aaabbc");
+            //Console.WriteLine(str);
+
+            //****18.Longest Valid parantheses****//
+            //int count = LongestValidParanthesis.LongestValidParentheses(")()");
+            //Console.WriteLine(count);
+
+            //****19.Kth Largest Element****//
+            //int[] a = { 4, 5, 6, 7, 0, 1, 2 };
+            //int element = new KthLargestNuminArr().FindKthLargest(a,2);
+            //Console.WriteLine(element);
 
             Console.Read();
         }
