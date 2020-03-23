@@ -6,7 +6,7 @@ namespace SortingAlgorithms
     {
         static void Main(string[] args)
         {
-            //int[] array = { -1, 0, 1, 2, -1, -4 };
+            int[] array = { 0,1,3,2};
             //****1. Bubble Sort ****//
             // Time complexity : O(n^2)
             // var sortedArray = BubbleSort.Sort(array);
@@ -17,7 +17,7 @@ namespace SortingAlgorithms
 
             //****3. Merge sort ****//
             // Time complexity : O(nlogn)
-            //MergeSort.Sort(array, 0, array.Length -1);
+            array = MergeSort.Sort(array);
 
             //****4. Quick sort ****//
             // Time complexity best case: O(nlogn)
@@ -29,9 +29,9 @@ namespace SortingAlgorithms
             //}
 
             //****5. Heap sort ****//
-            int[] array = { 10, 64, 7, 52, 32, 18, 2, 48 };
-            HeapSort hs = new HeapSort();
-            hs.Build_Max_Heap(array);
+            //int[] array = { 10, 64, 7, 52, 32, 18, 2, 48 };
+            //HeapSort hs = new HeapSort();
+            //hs.Build_Max_Heap(array);
             for (int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine(array[i]);

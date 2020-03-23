@@ -6,60 +6,57 @@ namespace SortingAlgorithms
 {
     public static class MergeSort
     {
-        public static void Sort(int[] arr, int left, int right)
+        public static int[] Sort(int[] arr)
         {
-            if (left >= right)
+            if (arr.Length <=1)
             {
-                return;
+                return arr;
             }
-           int middle = (left + right) / 2;
-           Sort(arr, left, middle);
-           Sort(arr, middle + 1, right);
-           Merge(arr, left, right);
-
+         
+           int[] res = Merge(arr, 0, arr.Length -1);
+           return res;
         }
 
-        public static void Merge(int[] arr,int left, int right)
+        public static int[] Merge(int[] arr, int left, int right)
         {
-            int leftStart = left;
-            int mid = (right + left) / 2;
-            int rightStart = mid +1;
-            int k = leftStart;
-            int[] temp = new int[arr.Length];
-           
-            while (leftStart <= mid  && rightStart <= right)
+            List<int> res = new List<int>();
+            if (left >= right)
             {
-                if(arr[leftStart] < arr[rightStart])
+                res.Add(arr[left]);
+                return res.ToArray();
+            }
+            int mid = (left + right) / 2;
+
+            int[] leftArray = Merge(arr, left, mid);
+            int[] rightArray = Merge(arr, mid + 1, right);
+            int i = 0;
+            int j = 0;
+           
+            while (i < leftArray.Length  && j < rightArray.Length)
+            {
+                if(leftArray[i] < rightArray[j])
                 {
-                    temp[k] = arr[leftStart];
-                    leftStart++;
-                    k++;
+                    res.Add(leftArray[i]);
+                    i++;
                 }
                 else
                 {
-                    temp[k] = arr[rightStart];
-                    rightStart++;
-                    k++;
+                    res.Add(rightArray[j]);
+                    j++;
                 }
             }
 
-            while(leftStart <= mid)
+            while(i < leftArray.Length)
             {
-                temp[k] = arr[leftStart];
-                leftStart++;
-                k++;
+                res.Add(leftArray[i]);
+                i++;
             }
-            while (rightStart <= right)
+            while (j < rightArray.Length)
             {
-                temp[k] = arr[rightStart];
-                rightStart++;
-                k++;
+                res.Add(rightArray[j]);
+                j++;
             }
-
-            for(int x = left; x <= right; x++)
-            {
-                arr[x] = temp[x];
-            }
+            return res.ToArray();
         }
     }
 }
