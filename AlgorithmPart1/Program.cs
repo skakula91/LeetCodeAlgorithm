@@ -87,9 +87,18 @@ namespace AlgorithmPart1
             //Console.WriteLine(element);
 
             //****20.Meeting Rooms****//
-            int[][] meetings = { new int[] {7,10 } , new int[] {2, 4 } };
-            bool canAttend = MeetingRooms.CanAttendMeetings(meetings);
-            Console.WriteLine(canAttend);
+            //int[][] meetings = { new int[] {7,10 } , new int[] {2, 4 } };
+            //bool canAttend = MeetingRooms.CanAttendMeetings(meetings);
+            //Console.WriteLine(canAttend);
+
+            //****21.Sum of Even Numbers After Queries****//
+            int[][] queries = { new int[] { 1, 0 }, new int[] { -3, 1 }, new int[] { -4, 0 }, new int[] { 2, 3 } };
+            int[] array = { 1, 2, 3, 4 };
+            int[] result = SumOfEvenNumberQuery.SumEvenAfterQueries(array, queries);
+            for (int i = 0; i < result.Length; i++)
+            {
+                Console.WriteLine(result[i]);
+            }
 
             Console.Read();
         }
