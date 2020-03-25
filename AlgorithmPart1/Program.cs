@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AlgorithmPart1
 {
@@ -92,12 +93,19 @@ namespace AlgorithmPart1
             //Console.WriteLine(canAttend);
 
             //****21.Sum of Even Numbers After Queries****//
-            int[][] queries = { new int[] { 1, 0 }, new int[] { -3, 1 }, new int[] { -4, 0 }, new int[] { 2, 3 } };
-            int[] array = { 1, 2, 3, 4 };
-            int[] result = SumOfEvenNumberQuery.SumEvenAfterQueries(array, queries);
-            for (int i = 0; i < result.Length; i++)
+            //int[][] queries = { new int[] { 1, 0 }, new int[] { -3, 1 }, new int[] { -4, 0 }, new int[] { 2, 3 } };
+            //int[] array = { 1, 2, 3, 4 };
+            //int[] result = SumOfEvenNumberQuery.SumEvenAfterQueries(array, queries);
+            //for (int i = 0; i < result.Length; i++)
+            //{
+            //    Console.WriteLine(result[i]);
+            //}
+
+            //****22.Binary Strings****//
+            List<string> result = BinaryStrings.Binary(4);
+            foreach (var str in result)
             {
-                Console.WriteLine(result[i]);
+                Console.WriteLine(str);
             }
 
             Console.Read();

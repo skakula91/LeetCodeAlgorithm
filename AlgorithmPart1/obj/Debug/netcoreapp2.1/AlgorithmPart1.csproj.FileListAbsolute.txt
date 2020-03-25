@@ -7,3 +7,5 @@ D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp2.1\AlgorithmPart1.Assem
 D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp2.1\AlgorithmPart1.AssemblyInfo.cs
 D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp2.1\AlgorithmPart1.dll
 D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp2.1\AlgorithmPart1.pdb
+D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp2.1\AlgorithmPart1.csprojAssemblyReference.cache
+D:\LeetCodeAlgorithm\AlgorithmPart1\obj\Debug\netcoreapp2.1\AlgorithmPart1.csproj.CoreCompileInputs.cache
