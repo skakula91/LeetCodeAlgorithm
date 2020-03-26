@@ -102,12 +102,12 @@ namespace AlgorithmPart1
             //}
 
             //****22.Binary Strings****//
-            List<string> result = BinaryStrings.Binary(4);
-            foreach (var str in result)
-            {
-                Console.WriteLine(str);
-            }
-
+            //List<string> result = BinaryStrings.Binary(4);
+            //foreach (var str in result)
+            //{
+            //    Console.WriteLine(str);
+            //}
+            BinaryStrings.BinaryDFS(3);
             Console.Read();
         }
     }
