@@ -40,8 +40,12 @@ namespace AlgorithmPart2
             //}
 
             //** 5. Subsets **//
-            int[] a = { 1, 2, 3 };
-            var subsets = new Subsets().SubsetsList(a);
+            //int[] a = { 1, 2, 3 };
+            //var subsets = new Subsets().SubsetsList(a);
+
+            //** 6. Counting Subsets **//
+            int[] a = {1,2,3 };
+            var subsets = new CountingSubsets().CombinationSum(a, 3);
             Console.Read();
         }
     }
