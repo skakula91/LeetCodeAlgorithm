@@ -31,13 +31,17 @@ namespace AlgorithmPart2
             //    Console.WriteLine(str);
             //}
 
-           //** 4. Letter Combinations of a Phone Number **//
-            string s = "23";
-            var strArr = new LetterCombinationPhoneNumber().LetterCombinations(s);
-            foreach (var str in strArr)
-            {
-                Console.WriteLine(str);
-            }
+            //** 4. Letter Combinations of a Phone Number **//
+            //string s = "23";
+            //var strArr = new LetterCombinationPhoneNumber().LetterCombinations(s);
+            //foreach (var str in strArr)
+            //{
+            //    Console.WriteLine(str);
+            //}
+
+            //** 5. Subsets **//
+            int[] a = { 1, 2, 3 };
+            var subsets = new Subsets().SubsetsList(a);
             Console.Read();
         }
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AlgorithmPart2
 {
-    public class LetterCombinationPhoneNumber
+    class LetterCombinationPhoneNumber
     {
         public List<string> result = new List<string>();
         public SortedDictionary<char, string> dict = new SortedDictionary<char, string>();
