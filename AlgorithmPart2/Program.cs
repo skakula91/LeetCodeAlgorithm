@@ -11,16 +11,24 @@ namespace AlgorithmPart2
             //TowersOfHanoii.Towers(3, 'a','b','c');
 
             //** 2. Permutations **//
-            int[] a = { 1, 2, 3 };
-            var result = Permutations.Permute(a);
-            for(int i = 0; i <result.Count; i++)
+            //int[] a = { 1, 2, 3 };
+            //var result = Permutations.Permute(a);
+            //for(int i = 0; i <result.Count; i++)
+            //{
+            //    StringBuilder sb = new StringBuilder();
+            //    for (int j =0; j< result[i].Count; j++)
+            //    {
+            //        sb.Append(result[i][j].ToString());
+            //    }
+            //    Console.WriteLine(sb);
+            //}
+
+            //** 3. Letter permutations **//
+            string s = "a1b2";
+            var strArr = new LetterPermutations().LetterCasePermutation(s);
+            foreach(var str in strArr)
             {
-                StringBuilder sb = new StringBuilder();
-                for (int j =0; j< result[i].Count; j++)
-                {
-                    sb.Append(result[i][j].ToString());
-                }
-                Console.WriteLine(sb);
+                Console.WriteLine(str);
             }
             Console.Read();
         }
