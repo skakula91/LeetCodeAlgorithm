@@ -24,9 +24,17 @@ namespace AlgorithmPart2
             //}
 
             //** 3. Letter permutations **//
-            string s = "a1b2";
-            var strArr = new LetterPermutations().LetterCasePermutation(s);
-            foreach(var str in strArr)
+            //string s = "a1b2";
+            //var strArr = new LetterPermutations().LetterCasePermutation(s);
+            //foreach(var str in strArr)
+            //{
+            //    Console.WriteLine(str);
+            //}
+
+           //** 4. Letter Combinations of a Phone Number **//
+            string s = "23";
+            var strArr = new LetterCombinationPhoneNumber().LetterCombinations(s);
+            foreach (var str in strArr)
             {
                 Console.WriteLine(str);
             }
