@@ -48,9 +48,13 @@ namespace AlgorithmPart2
             //var subsets = new CountingSubsets().CombinationSum(a, 3);
 
             //** 7. Combination sums II **//
-            int[] a = {2,5,2,1,2};
-            var subsets = new CombinationII().CombinationSum2(a, 5);
-            Console.Read();
+            //int[] a = {2,5,2,1,2};
+            //var subsets = new CombinationII().CombinationSum2(a, 5);
+
+            //** 8. Combination sums II **//
+            long[] a = { 1,1 };
+            var subsets =  TargetSum.check_if_sum_possible(a, 0);
+            //Console.Read();
         }
     }
 }
