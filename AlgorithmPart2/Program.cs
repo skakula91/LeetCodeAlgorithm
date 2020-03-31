@@ -51,10 +51,17 @@ namespace AlgorithmPart2
             //int[] a = {2,5,2,1,2};
             //var subsets = new CombinationII().CombinationSum2(a, 5);
 
-            //** 8. Combination sums II **//
-            long[] a = { 1,1 };
-            var subsets =  TargetSum.check_if_sum_possible(a, 0);
-            //Console.Read();
+            //** 8. check if sum possible **//
+            //long[] a = { 1,1 };
+            //var subsets =  TargetSum.check_if_sum_possible(a, 0);
+
+            //** 9. Generate Paranthesis **//
+            var subsets =  new GenerateParanthesis().GenerateParenthesis(3);
+            foreach(string str in subsets)
+            {
+                Console.WriteLine(str);
+            }
+            Console.Read();
         }
     }
 }
