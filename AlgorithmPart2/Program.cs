@@ -56,10 +56,24 @@ namespace AlgorithmPart2
             //var subsets =  TargetSum.check_if_sum_possible(a, 0);
 
             //** 9. Generate Paranthesis **//
-            var subsets =  new GenerateParanthesis().GenerateParenthesis(3);
-            foreach(string str in subsets)
+            //var subsets =  new GenerateParanthesis().GenerateParenthesis(3);
+            //foreach(string str in subsets)
+            //{
+            //    Console.WriteLine(str);
+            //}
+
+            //** 10. Valid Paranthesis **//
+            //var count =  new ValidParanthesis().LongestValidParentheses("()");
+            //Console.WriteLine(count);
+
+            //** 11. N Queen **//
+            var strs = new NQueen().SolveNQueens(4);
+            foreach(var str in strs)
             {
-                Console.WriteLine(str);
+                foreach (var s in str)
+                {
+                    Console.WriteLine(s);
+                }
             }
             Console.Read();
         }
