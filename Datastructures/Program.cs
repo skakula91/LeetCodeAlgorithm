@@ -71,11 +71,14 @@ namespace Datastructures
             //Console.WriteLine(height);
 
             //Level Order Traversal
-            var result = new LevelOrderTraversal().Traverse(bnode);
-            foreach(int i in result)
-            {
-                Console.WriteLine(i);
-            }
+            //var result = new LevelOrderTraversal().Traverse(bnode);
+            //foreach(int i in result)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //1. Binary Tree Level Order Traversal 
+            var result = new LevelOrderTraversalI().Traverse(bnode);
             Console.ReadKey();
         }
     }
