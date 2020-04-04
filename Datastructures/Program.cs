@@ -88,7 +88,11 @@ namespace Datastructures
             //Console.WriteLine(foundPath);
 
             //4. Path Sum II
-            var path = new PathSumII().PathSum(bnode, 9);
+            //var path = new PathSumII().PathSum(bnode, 9);
+
+            //5. Is valid Binary tree
+            var isValid = new ValidBinaryTree().IsValidBST(bnode);
+            Console.WriteLine(isValid);
             Console.ReadKey();
         }
     }
