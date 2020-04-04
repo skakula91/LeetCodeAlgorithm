@@ -83,9 +83,12 @@ namespace Datastructures
             //2. Binary Tree Zigzag Level Order Traversal
             //var result = new ZigZagLevelOrderTraversal().ZigzagLevelOrder(bnode);
 
-            //3. Path Sum
-            var foundPath = new PathSum().HasPathSum(bnode,9);
-            Console.WriteLine(foundPath);
+            ////3. Path Sum
+            //var foundPath = new PathSum().HasPathSum(bnode,9);
+            //Console.WriteLine(foundPath);
+
+            //4. Path Sum II
+            var path = new PathSumII().PathSum(bnode, 9);
             Console.ReadKey();
         }
     }
