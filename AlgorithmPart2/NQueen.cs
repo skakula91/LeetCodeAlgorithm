@@ -40,7 +40,6 @@ namespace AlgorithmPart2
         }
         private bool IsValidPlacement(List<int> positions, int col, int row)
         {
-            //check column
             for(int i = 0; i < positions.Count-1; i++)
             {
                 //check column

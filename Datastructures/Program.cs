@@ -67,8 +67,15 @@ namespace Datastructures
             //    sortedLstNode = sortedLstNode.next;
             //}
 
-            var height = bTree.FindHeight(bnode);
-            Console.WriteLine(height);
+            //var height = bTree.FindHeight(bnode);
+            //Console.WriteLine(height);
+
+            //Level Order Traversal
+            var result = new LevelOrderTraversal().Traverse(bnode);
+            foreach(int i in result)
+            {
+                Console.WriteLine(i);
+            }
             Console.ReadKey();
         }
     }
