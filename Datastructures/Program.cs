@@ -78,7 +78,10 @@ namespace Datastructures
             //}
 
             //1. Binary Tree Level Order Traversal 
-            var result = new LevelOrderTraversalI().Traverse(bnode);
+            //var result = new LevelOrderTraversalI().Traverse(bnode);
+
+            //2. Binary Tree Zigzag Level Order Traversal
+            var result = new ZigZagLevelOrderTraversal().ZigzagLevelOrder(bnode);
             Console.ReadKey();
         }
     }
