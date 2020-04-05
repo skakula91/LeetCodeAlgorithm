@@ -91,8 +91,13 @@ namespace Datastructures
             //var path = new PathSumII().PathSum(bnode, 9);
 
             //5. Is valid Binary tree
-            var isValid = new ValidBinaryTree().IsValidBST(bnode);
-            Console.WriteLine(isValid);
+            //var isValid = new ValidBinaryTree().IsValidBST(bnode);
+            //Console.WriteLine(isValid);
+
+            //6. Diameter of Binary Tree
+            var dia = new DiameterBinaryTree().DiameterOfBinaryTree(bnode);
+            Console.WriteLine(dia);
+
             Console.ReadKey();
         }
     }
