@@ -40,10 +40,22 @@ namespace Graphs
                     }
                 }
             }
-            return;
         }
 
-        public Dictionary<int,List<int>> BuildGraph(int n, int[][] edges)
+        public void DFS(int src, Dictionary<int, List<int>> adjacencyMap, int[] visited)
+        {
+            visited[src] = 1;
+            foreach (int edge in adjacencyMap[src])
+            {
+                if (visited[edge] == 0)
+                {
+                    DFS(edge, adjacencyMap, visited);
+                }
+            }
+
+        }
+
+        public Dictionary<int, List<int>> BuildGraph(int n, int[][] edges)
         {
             Dictionary<int, List<int>> dict = new Dictionary<int, List<int>>();
             for (int i = 0; i < n; i++)
@@ -51,10 +63,10 @@ namespace Graphs
                 dict.Add(i, new List<int>());
             }
             // Adjacency List
-            foreach(var edge in edges)
+            foreach (var edge in edges)
             {
-               dict[edge[0]].Add(edge[1]);
-               dict[edge[1]].Add(edge[0]);
+                dict[edge[0]].Add(edge[1]);
+                dict[edge[1]].Add(edge[0]);
             }
 
             return dict;
