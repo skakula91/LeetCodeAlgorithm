@@ -17,9 +17,15 @@ namespace Graphs
             //Console.WriteLine(isValidTree);
 
             //3. Graph Valid Tree
-            int[][] edges = { new int[] { 1, 3 }, new int[] { 0, 2 }, new int[] { 1, 3 }, new int[] { 0, 2 } };
-            bool isBipartiteGraph = new IsBipartite().IsBipartiteGraph(edges);
-            Console.WriteLine(isBipartiteGraph);
+            //int[][] adjacencyList = { new int[] { 1, 3 }, new int[] { 0, 2 }, new int[] { 1, 3 }, new int[] { 0, 2 } };
+            //bool isBipartiteGraph = new IsBipartite().IsBipartiteGraph(adjacencyList);
+            //Console.WriteLine(isBipartiteGraph);
+
+            //4. Number of Islands
+            char[][] grid = { new char[] { '1', '1','0','0','0' }, new char[] { '1', '1','0', '0', '0' }, new char[] { '0', '0', '1', '0','0' }, new char[] { '0', '0', '0', '1','1' } };
+            //char[][] grid = { new char[] { '1' }, new char[] { '1' } };
+            int islandCount = new NumberOfIslands().NumIslands(grid);
+            Console.WriteLine(islandCount);
             Console.Read();
         }
     }
