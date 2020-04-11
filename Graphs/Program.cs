@@ -12,9 +12,14 @@ namespace Graphs
             //Console.WriteLine(numberOfComponents);
 
             //2. Graph Valid Tree
-            int[][] edges = { new int[] { 0, 1 }, new int[] { 0, 2 }, new int[] { 0, 3 }, new int[] { 1, 4 } };
-            bool isValidTree = new GraphValidTree().ValidTree(5, edges);
-            Console.WriteLine(isValidTree);
+            //int[][] edges = { new int[] { 0, 1 }, new int[] { 0, 2 }, new int[] { 0, 3 }, new int[] { 1, 4 } };
+            //bool isValidTree = new GraphValidTree().ValidTree(5, edges);
+            //Console.WriteLine(isValidTree);
+
+            //3. Graph Valid Tree
+            int[][] edges = { new int[] { 1, 3 }, new int[] { 0, 2 }, new int[] { 1, 3 }, new int[] { 0, 2 } };
+            bool isBipartiteGraph = new IsBipartite().IsBipartiteGraph(edges);
+            Console.WriteLine(isBipartiteGraph);
             Console.Read();
         }
     }
