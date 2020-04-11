@@ -22,10 +22,15 @@ namespace Graphs
             //Console.WriteLine(isBipartiteGraph);
 
             //4. Number of Islands
-            char[][] grid = { new char[] { '1', '1','0','0','0' }, new char[] { '1', '1','0', '0', '0' }, new char[] { '0', '0', '1', '0','0' }, new char[] { '0', '0', '0', '1','1' } };
-            //char[][] grid = { new char[] { '1' }, new char[] { '1' } };
-            int islandCount = new NumberOfIslands().NumIslands(grid);
-            Console.WriteLine(islandCount);
+            //char[][] grid = { new char[] { '1', '1','0','0','0' }, new char[] { '1', '1','0', '0', '0' }, new char[] { '0', '0', '1', '0','0' }, new char[] { '0', '0', '0', '1','1' } };
+            ////char[][] grid = { new char[] { '1' }, new char[] { '1' } };
+            //int islandCount = new NumberOfIslands().NumIslands(grid);
+            //Console.WriteLine(islandCount);
+
+            //4. Course Schedule
+            int[][] edges = { new int[] { 1, 0 }, new int[] { 0, 1 } };
+            bool canGetdegree = new CourseSchedule().CanFinish(2, edges);
+            Console.WriteLine(canGetdegree);
             Console.Read();
         }
     }
