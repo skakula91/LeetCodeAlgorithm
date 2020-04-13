@@ -27,10 +27,23 @@ namespace Graphs
             //int islandCount = new NumberOfIslands().NumIslands(grid);
             //Console.WriteLine(islandCount);
 
-            //4. Course Schedule
-            int[][] edges = { new int[] { 1, 0 }, new int[] { 0, 1 } };
-            bool canGetdegree = new CourseSchedule().CanFinish(2, edges);
-            Console.WriteLine(canGetdegree);
+            //5. Course Schedule
+            //int[][] edges = { new int[] { 1, 0 }, new int[] { 0, 1 } };
+            //bool canGetdegree = new CourseSchedule().CanFinish(2, edges);
+            //Console.WriteLine(canGetdegree);
+
+            //6. Critical Connections in a Network
+            //int[][] edges = { new int[] { 1, 0 }, new int[] { 1, 2} ,new int[] { 2, 0 }, new int[] { 1, 3 } };
+            //var criticalConnections = new CriticalConnections().CriticalConnectionsNetwork(4, edges);
+
+            //7. Alien Dictionary
+            string[] words = {"wrt",
+                "wrf",
+                "er",
+                "ett",
+                "rftt" };
+            var order = new AlienDictionary().AlienOrder(words);
+            Console.WriteLine(order);
             Console.Read();
         }
     }
