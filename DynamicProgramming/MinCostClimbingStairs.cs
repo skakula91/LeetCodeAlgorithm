@@ -13,6 +13,7 @@ namespace DynamicProgramming
             int[] memo = new int[cost.Length+1];
 
             // don't step on the first step yet
+            // first and last element is zero resembles first and last floor before taking steps and reaching nth floor
             memo[0] = 0;
             memo[1] = cost[0];
 
