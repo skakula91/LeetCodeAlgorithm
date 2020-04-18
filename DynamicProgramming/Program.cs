@@ -24,9 +24,14 @@ namespace DynamicProgramming
             //Console.WriteLine(pathSum);
 
             // 5. Min Cost Climbing Stairs
-             int[] input = new int[] {10, 15, 20};
-             var pathCost = new MinCostClimbingStairs().MinCostClimbingStairsSum(input);
-            Console.WriteLine(pathCost);
+            // int[] input = new int[] {10, 15, 20};
+            // var pathCost = new MinCostClimbingStairs().MinCostClimbingStairsSum(input);
+            //Console.WriteLine(pathCost);
+
+            // 6. Coin Change
+            int[] input = new int[] { 1, 2, 5 };
+            var numberOfCoins = new Coinschange().CoinChange(input,11);
+            Console.WriteLine(numberOfCoins);
             Console.Read();
         }
     }
