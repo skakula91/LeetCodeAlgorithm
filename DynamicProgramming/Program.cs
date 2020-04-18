@@ -29,9 +29,14 @@ namespace DynamicProgramming
             //Console.WriteLine(pathCost);
 
             // 6. Coin Change
-            int[] input = new int[] { 1, 2, 5 };
-            var numberOfCoins = new Coinschange().CoinChange(input,11);
-            Console.WriteLine(numberOfCoins);
+            //int[] input = new int[] { 1, 2, 5 };
+            //var numberOfCoins = new Coinschange().CoinChange(input,11);
+            //Console.WriteLine(numberOfCoins);
+
+            // 7. Rod Cutting
+            int[] prices = new int[] { 0,1,3,3,8,8,10 };
+            var maxPrice = new RodPrice().MaxPrice(prices, 6);
+            Console.WriteLine(maxPrice);
             Console.Read();
         }
     }
