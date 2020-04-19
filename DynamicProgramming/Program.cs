@@ -39,9 +39,13 @@ namespace DynamicProgramming
             //Console.WriteLine(maxPrice);
 
             // 8. Test for Tie - combined weight for people in group 1 should be equal to group 2
-            int[] peopleWeights = new int[] {1,2,3,4,5,7 };
-            var isPossible = new TestForTie().IsPossibleDp(peopleWeights);
-            Console.WriteLine(isPossible);
+            //int[] peopleWeights = new int[] {1,2,3,4,5,7 };
+            //var isPossible = new TestForTie().IsPossibleDp(peopleWeights);
+            //Console.WriteLine(isPossible);
+
+            // 9. Edit Distance
+            var distance = new EditDistance().Distance("ball","car");
+            Console.WriteLine(distance);
             Console.Read();
         }
     }
