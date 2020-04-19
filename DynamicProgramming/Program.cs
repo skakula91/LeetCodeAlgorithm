@@ -34,9 +34,14 @@ namespace DynamicProgramming
             //Console.WriteLine(numberOfCoins);
 
             // 7. Rod Cutting
-            int[] prices = new int[] { 0,1,3,3,8,8,10 };
-            var maxPrice = new RodPrice().MaxPrice(prices, 6);
-            Console.WriteLine(maxPrice);
+            //int[] prices = new int[] { 0,1,3,3,8,8,10 };
+            //var maxPrice = new RodPrice().MaxPrice(prices, 6);
+            //Console.WriteLine(maxPrice);
+
+            // 8. Test for Tie - combined weight for people in group 1 should be equal to group 2
+            int[] peopleWeights = new int[] {1,2,3,4,5,7 };
+            var isPossible = new TestForTie().IsPossibleDp(peopleWeights);
+            Console.WriteLine(isPossible);
             Console.Read();
         }
     }
