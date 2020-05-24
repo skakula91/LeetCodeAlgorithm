@@ -107,7 +107,15 @@ namespace AlgorithmPart1
             //{
             //    Console.WriteLine(str);
             //}
-            BinaryStrings.BinaryDFS(3);
+            //BinaryStrings.BinaryDFS(3);
+
+            //****23.Group Numbers****//
+            int[] a = { 1, 2, 3, 4 };
+            var result = GroupNumbers.solve(a);
+            foreach (var i in result)
+            {
+                Console.WriteLine(i);
+            }
             Console.Read();
         }
     }

@@ -12,8 +12,8 @@ namespace Strings
             //Console.WriteLine(isPalindrome);
 
             //****2. Substring KMP ****//
-            string s = "kdsgwadsgt";
-            string pattern = "dsgwadsgt";
+            string s = "aaaab";
+            string pattern = "aab";
             bool isSubstring = new SubstringMatch_KMP().SubstringIndex(s, pattern);
             Console.WriteLine(isSubstring);
             Console.ReadKey();
