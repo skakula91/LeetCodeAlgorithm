@@ -15,7 +15,8 @@ namespace AlgorithmPart2
         {
             if (nums.Count == 0)
             {
-                result.Add(slate);
+                result.Add(new List<int>(slate));
+                return;
                 
             }
             else
@@ -25,9 +26,9 @@ namespace AlgorithmPart2
                     List<int> temp = new List<int>(nums);
                     temp.RemoveAt(i);
 
-                    var item = new List<int>(slate);
-                    item.Add(nums[i]);               
-                    Helper(item, temp);
+                    slate.Add(nums[i]);               
+                    Helper(slate, temp);
+                    slate.RemoveAt(slate.Count - 1);
                 }
             }
         }
