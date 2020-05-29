@@ -48,7 +48,7 @@ namespace AlgorithmPart2
             //var subsets = new CountingSubsets().CombinationSum(a, 3);
 
             //** 7. Combination sums II **//
-            //int[] a = {2,5,2,1,2};
+            //int[] a = { 2, 5, 2, 1, 2 };
             //var subsets = new CombinationII().CombinationSum2(a, 5);
 
             //** 8. check if sum possible **//
@@ -67,8 +67,18 @@ namespace AlgorithmPart2
             //Console.WriteLine(count);
 
             //** 11. N Queen **//
-            var strs = new NQueen().SolveNQueens(4);
-            foreach(var str in strs)
+            //var strs = new NQueen().SolveNQueens(4);
+            //foreach(var str in strs)
+            //{
+            //    foreach (var s in str)
+            //    {
+            //        Console.WriteLine(s);
+            //    }
+            //}
+
+            //** 12. Palindrome Partitioning **//
+            var strs = new PalindromePartitioning().Partition("aab");
+            foreach (var str in strs)
             {
                 foreach (var s in str)
                 {
