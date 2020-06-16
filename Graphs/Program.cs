@@ -16,7 +16,7 @@ namespace Graphs
             //bool isValidTree = new GraphValidTree().ValidTree(5, edges);
             //Console.WriteLine(isValidTree);
 
-            //3. Graph Valid Tree
+            //3. Is Bipartite Graph
             //int[][] adjacencyList = { new int[] { 1, 3 }, new int[] { 0, 2 }, new int[] { 1, 3 }, new int[] { 0, 2 } };
             //bool isBipartiteGraph = new IsBipartite().IsBipartiteGraph(adjacencyList);
             //Console.WriteLine(isBipartiteGraph);
