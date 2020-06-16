@@ -24,7 +24,7 @@ namespace Datastructures
             //Traversal
             //bTree.InOrder(bnode);
             //bTree.PreOrder(bnode);
-            bTree.PostOrder(bnode);
+            //bTree.PostOrder(bnode);
 
             //min element
             // int value = bTree.MinElement(bnode);
@@ -95,17 +95,17 @@ namespace Datastructures
             //Console.WriteLine(isValid);
 
             //6. Diameter of Binary Tree
-            //var dia = new DiameterBinaryTree().DiameterOfBinaryTree(bnode);
-            //Console.WriteLine(dia);
+            var dia = new DiameterBinaryTree().DiameterOfBinaryTree(bnode);
+            Console.WriteLine(dia);
 
             //7. Count Univalue Subtrees
             //var univalCount = new IsUnivalBTree().CountUnivalSubtrees(bnode);
             // Console.WriteLine(univalCount);
 
             //8. Construct Binary Tree from Preorder and Inorder Traversal
-            int[] preorder = { 3, 9, 20, 15, 7 };
-            int[] inorder = { 9, 3, 15, 20, 7 };
-            var node = new ConstructBinaryTree().BuildTree(preorder, inorder);
+            //int[] preorder = { 3, 9, 20, 15, 7 };
+            //int[] inorder = { 9, 3, 15, 20, 7 };
+            //var node = new ConstructBinaryTree().BuildTree(preorder, inorder);
 
             Console.ReadKey();
         }

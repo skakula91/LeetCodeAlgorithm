@@ -16,7 +16,7 @@ namespace SortingAlgorithms
             //var sortedArray = InsertionSort.Sort(array);
 
             //****3. Merge sort ****//
-            // Time complexity : O(nlogn)
+            //Time complexity : O(nlogn)
             //array = MergeSort.Sort(array);
 
             //****4. Quick sort ****//

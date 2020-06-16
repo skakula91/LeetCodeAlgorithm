@@ -16,8 +16,7 @@ namespace AlgorithmPart2
             if (nums.Count == 0)
             {
                 result.Add(new List<int>(slate));
-                return;
-                
+                return;                
             }
             else
             {
