@@ -110,12 +110,17 @@ namespace AlgorithmPart1
             //BinaryStrings.BinaryDFS(3);
 
             //****23.Group Numbers****//
-            int[] a = { 1, 2, 3, 4 };
-            var result = GroupNumbers.solve(a);
-            foreach (var i in result)
-            {
-                Console.WriteLine(i);
-            }
+            //int[] a = { 1, 2, 3, 4 };
+            //var result = GroupNumbers.solve(a);
+            //foreach (var i in result)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //****24.Hamming Distance****//
+            var result = new HammingDistance().Distance(1,4);
+            Console.WriteLine(result);
+            
             Console.Read();
         }
     }
