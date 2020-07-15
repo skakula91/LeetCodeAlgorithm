@@ -7,9 +7,9 @@ namespace Graphs
         static void Main(string[] args)
         {
             //1. Number of Connected Components in an Undirected Graph
-            int[][] edges = { new int[] { 0, 1 }, new int[] { 1, 2 }, new int[] { 3, 4 } };
-            int numberOfComponents = new ConnectedComponents().CountComponents(5, edges);
-            Console.WriteLine(numberOfComponents);
+            //int[][] edges = { new int[] { 0, 1 }, new int[] { 1, 2 }, new int[] { 3, 4 } };
+            //int numberOfComponents = new ConnectedComponents().CountComponents(5, edges);
+            //Console.WriteLine(numberOfComponents);
 
             //2. Graph Valid Tree
             //int[][] edges = { new int[] { 0, 1 }, new int[] { 0, 2 }, new int[] { 0, 3 }, new int[] { 1, 4 } };
@@ -50,6 +50,15 @@ namespace Graphs
             //int[][] edges =  {new int[] { 0, 1 }, new int[] { 0, 5 }, new int[] { 1, 5 },  new int[] { 0, 2 }, new int[] { 1, 3 }, new int[] { 2, 4 }, new int[] { 3, 4 } , new int[] { 0, 3 } , new int[] { 1, 2 }, new int[] { 2, 3} };
             //bool isEulerian = new HasEulerianCycle().Components(6, edges);
             //Console.WriteLine(isEulerian);
+
+            //9. Number of pairs
+            //string s = "11111111111111111111111111111111100001001";
+            //long pairs = new NumberOfPairs().NumSub(s);
+            //Console.WriteLine(pairs);
+
+            //10. Minimum Knight Moves
+            int moves = new MinimumKnightMoves().MinKnightMoves(0,1);
+            Console.WriteLine(moves);
             Console.Read();
         }
     }
