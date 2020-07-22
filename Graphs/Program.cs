@@ -57,8 +57,14 @@ namespace Graphs
             //Console.WriteLine(pairs);
 
             //10. Minimum Knight Moves
-            int moves = new MinimumKnightMoves().MinKnightMoves(0,1);
-            Console.WriteLine(moves);
+            //int moves = new MinimumKnightMoves().MinKnightMoves(0,1);
+            //Console.WriteLine(moves);
+
+            //11. Word search
+            char[][] board = { new char[] { 'A', 'B', 'C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' } };
+            //char[][] board = { new char[] { 'A', 'B' } };
+            bool doesExist = new WordSearch().Exist(board, "SEE");
+            Console.WriteLine(doesExist);
             Console.Read();
         }
     }
