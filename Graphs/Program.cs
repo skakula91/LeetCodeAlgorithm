@@ -67,9 +67,13 @@ namespace Graphs
             //Console.WriteLine(doesExist);
 
             //12. Friend circles
-            int[][] M = { new int[] { 1,1,0}, new int[] {1,1,0 }, new int[] {0,0,1} };
-            int circles = new FriendCircle().FindCircleNum(M);
-            Console.WriteLine(circles);
+            //int[][] M = { new int[] { 1,1,0}, new int[] {1,1,0 }, new int[] {0,0,1} };
+            //int circles = new FriendCircle().FindCircleNum(M);
+            //Console.WriteLine(circles);
+
+            //13. All Paths From Source to Target
+            int[][] graph = { new int[] { 1,2}, new int[] {3 }, new int[] {3}, new int[] {}};
+            var lst = new AllPathSourcetoTarget().AllPathsSourceTarget(graph);
             Console.Read();
         }
     }
