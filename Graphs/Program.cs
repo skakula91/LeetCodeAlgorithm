@@ -61,10 +61,15 @@ namespace Graphs
             //Console.WriteLine(moves);
 
             //11. Word search
-            char[][] board = { new char[] { 'A', 'B', 'C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' } };
+            //char[][] board = { new char[] { 'A', 'B', 'C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' } };
             //char[][] board = { new char[] { 'A', 'B' } };
-            bool doesExist = new WordSearch().Exist(board, "SEE");
-            Console.WriteLine(doesExist);
+            //bool doesExist = new WordSearch().Exist(board, "SEE");
+            //Console.WriteLine(doesExist);
+
+            //12. Friend circles
+            int[][] M = { new int[] { 1,1,0}, new int[] {1,1,0 }, new int[] {0,0,1} };
+            int circles = new FriendCircle().FindCircleNum(M);
+            Console.WriteLine(circles);
             Console.Read();
         }
     }
