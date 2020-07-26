@@ -37,13 +37,10 @@ namespace Graphs
             //var criticalConnections = new CriticalConnections().CriticalConnectionsNetwork(4, edges);
 
             //7. Alien Dictionary
-            //string[] words = {"wrt",
-            //    "wrf",
-            //    "er",
-            //    "ett",
-            //    "rftt" };
-            //var order = new AlienDictionary().AlienOrder(words);
-            //Console.WriteLine(order);
+            string[] words = {"abc",
+                "ab"};
+            var order = new AlienDictionary().AlienOrder(words);
+            Console.WriteLine(order);
 
             //8. Eulerian Cycle - every vertex has a even degree
             // Eulerian Path - oddVertex == 0 || oddVertex == 2 -- every eulerian cycle is a eulerian path
@@ -72,8 +69,8 @@ namespace Graphs
             //Console.WriteLine(circles);
 
             //13. All Paths From Source to Target
-            int[][] graph = { new int[] { 1,2}, new int[] {3 }, new int[] {3}, new int[] {}};
-            var lst = new AllPathSourcetoTarget().AllPathsSourceTarget(graph);
+            //int[][] graph = { new int[] { 1,2}, new int[] {3 }, new int[] {3}, new int[] {}};
+            //var lst = new AllPathSourcetoTarget().AllPathsSourceTarget(graph);
             Console.Read();
         }
     }
