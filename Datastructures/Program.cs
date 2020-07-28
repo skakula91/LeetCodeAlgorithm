@@ -22,7 +22,7 @@ namespace Datastructures
             //    Console.WriteLine("Matching element not found");
 
             //Traversal
-            //bTree.InOrder(bnode);
+            bTree.InOrder(bnode);
             //bTree.PreOrder(bnode);
             //bTree.PostOrder(bnode);
 
@@ -95,8 +95,8 @@ namespace Datastructures
             //Console.WriteLine(isValid);
 
             //6. Diameter of Binary Tree
-            var dia = new DiameterBinaryTree().DiameterOfBinaryTree(bnode);
-            Console.WriteLine(dia);
+            //var dia = new DiameterBinaryTree().DiameterOfBinaryTree(bnode);
+            //Console.WriteLine(dia);
 
             //7. Count Univalue Subtrees
             //var univalCount = new IsUnivalBTree().CountUnivalSubtrees(bnode);

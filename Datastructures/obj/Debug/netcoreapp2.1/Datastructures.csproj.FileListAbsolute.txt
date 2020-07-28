@@ -8,3 +8,4 @@ D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.Assem
 D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.dll
 D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.pdb
 D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.csprojAssemblyReference.cache
+D:\LeetCodeAlgorithm\Datastructures\obj\Debug\netcoreapp2.1\Datastructures.csproj.CoreCompileInputs.cache
