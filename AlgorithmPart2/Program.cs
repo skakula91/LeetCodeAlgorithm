@@ -77,14 +77,19 @@ namespace AlgorithmPart2
             //}
 
             //** 12. Palindrome Partitioning **//
-            var strs = new PalindromePartitioning().Partition("aab");
-            foreach (var str in strs)
-            {
-                foreach (var s in str)
-                {
-                    Console.WriteLine(s);
-                }
-            }
+            //var strs = new PalindromePartitioning().Partition("aab");
+            //foreach (var str in strs)
+            //{
+            //    foreach (var s in str)
+            //    {
+            //        Console.WriteLine(s);
+            //    }
+            //}
+
+            //** 13. Task scheduler **//
+            char[] tasks = { 'A', 'A', 'A', 'B', 'B', 'B' };
+            var intervals = new TaskSheduduler().LeastInterval(tasks, 2);
+            Console.WriteLine(intervals);
             Console.Read();
         }
     }
