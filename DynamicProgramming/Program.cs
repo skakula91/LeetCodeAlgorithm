@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DynamicProgramming
 {
@@ -44,8 +45,13 @@ namespace DynamicProgramming
             //Console.WriteLine(isPossible);
 
             // 9. Edit Distance
-            var distance = new EditDistance().Distance("ball","car");
-            Console.WriteLine(distance);
+            //var distance = new EditDistance().Distance("ball","car");
+            //Console.WriteLine(distance);
+
+            // 10. Word Break
+            List<string>  dict = new List<string>(){ "leet", "code"};
+            bool isPossible = new WorkBreakI().WordBreak("leetcode", dict);
+            Console.WriteLine(isPossible);
             Console.Read();
         }
     }
