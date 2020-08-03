@@ -45,8 +45,8 @@ namespace DynamicProgramming
             //Console.WriteLine(isPossible);
 
             // 9. Edit Distance
-            //var distance = new EditDistance().Distance("ball","car");
-            //Console.WriteLine(distance);
+            var distance = new EditDistance().Distance("ball", "car");
+            Console.WriteLine(distance);
 
             // 10. Word Break
             //List<string>  dict = new List<string>(){ "leet", "code"};
@@ -54,8 +54,8 @@ namespace DynamicProgramming
             //Console.WriteLine(isPossible);
 
             // 11. Detectcapital
-            bool hasCycle = new DetectCaptial().DetectCapitalUse("waHaha");
-            Console.WriteLine(hasCycle);
+            //bool hasCycle = new DetectCaptial().DetectCapitalUse("waHaha");
+            //Console.WriteLine(hasCycle);
             Console.Read();
         }
     }
