@@ -40,7 +40,7 @@ namespace DynamicProgramming
             //Console.WriteLine(maxPrice);
 
             // 8. Test for Tie - combined weight for people in group 1 should be equal to group 2
-            //int[] peopleWeights = new int[] {1,2,3,4,5,7 };
+            //int[] peopleWeights = new int[] { 1, 2, 3, 4, 5, 7 };
             //var isPossible = new TestForTie().IsPossibleDp(peopleWeights);
             //Console.WriteLine(isPossible);
 
@@ -49,9 +49,13 @@ namespace DynamicProgramming
             //Console.WriteLine(distance);
 
             // 10. Word Break
-            List<string>  dict = new List<string>(){ "leet", "code"};
-            bool isPossible = new WorkBreakI().WordBreak("leetcode", dict);
-            Console.WriteLine(isPossible);
+            //List<string>  dict = new List<string>(){ "leet", "code"};
+            //bool isPossible = new WorkBreakI().WordBreak("leetcode", dict);
+            //Console.WriteLine(isPossible);
+
+            // 11. Detectcapital
+            bool hasCycle = new DetectCaptial().DetectCapitalUse("waHaha");
+            Console.WriteLine(hasCycle);
             Console.Read();
         }
     }

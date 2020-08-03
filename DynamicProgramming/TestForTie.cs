@@ -25,9 +25,9 @@ namespace DynamicProgramming
                 dp[i, 0] = true;
             }
 
-            for (int j = 1; j < totalWeight / 2 + 1; j++)
+            for (int j = 1; j < totalWeight / 2 +1; j++)
             {
-                dp[0, j] = false;
+                dp[weights.Length, j] = false;
             }
 
             for (int i = weights.Length - 1; i >= 0; i--)
