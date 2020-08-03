@@ -87,9 +87,15 @@ namespace AlgorithmPart2
             //}
 
             //** 13. Task scheduler **//
-            char[] tasks = { 'A', 'A', 'A', 'B', 'B', 'B' };
-            var intervals = new TaskSheduduler().LeastInterval(tasks, 2);
-            Console.WriteLine(intervals);
+            //char[] tasks = { 'A', 'A', 'A', 'B', 'B', 'B' };
+            //var intervals = new TaskSheduduler().LeastInterval(tasks, 2);
+            //Console.WriteLine(intervals);
+
+            //** 14. K Closest Points to Origin **//
+            // use min heap of size k - revisit
+            int[][] points = {new int[] {1, 3}, new int[] {-2, 2}};
+            var closestPoints = new TopKClosestpoints().KClosest(points, 1);
+            //Console.WriteLine(intervals);
             Console.Read();
         }
     }
