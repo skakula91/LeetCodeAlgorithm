@@ -7,13 +7,13 @@ namespace Datastructures
     {
         static void Main(string[] args)
         {
-            BNode bnode = null;
-            BinaryTree bTree = new BinaryTree();
-            bnode = bTree.Insert(bnode, 4);
-            bnode = bTree.Insert(bnode, 2);
-            bnode = bTree.Insert(bnode, 1);
-            bnode = bTree.Insert(bnode, 3);
-            bnode = bTree.Insert(bnode, 5);
+            //BNode bnode = null;
+            //BinaryTree bTree = new BinaryTree();
+            //bnode = bTree.Insert(bnode, 4);
+            //bnode = bTree.Insert(bnode, 2);
+            //bnode = bTree.Insert(bnode, 1);
+            //bnode = bTree.Insert(bnode, 3);
+            //bnode = bTree.Insert(bnode, 5);
 
             //bool isAvailable = bTree.Search(bnode, 22);
             //if (isAvailable)
@@ -22,7 +22,7 @@ namespace Datastructures
             //    Console.WriteLine("Matching element not found");
 
             //Traversal
-            bTree.InOrder(bnode);
+            //bTree.InOrder(bnode);
             //bTree.PreOrder(bnode);
             //bTree.PostOrder(bnode);
 
@@ -106,6 +106,20 @@ namespace Datastructures
             //int[] preorder = { 3, 9, 20, 15, 7 };
             //int[] inorder = { 9, 3, 15, 20, 7 };
             //var node = new ConstructBinaryTree().BuildTree(preorder, inorder);
+
+            //9. LRU cache
+            //int[] preorder = { 3, 9, 20, 15, 7 };
+            LRUCache cache = new LRUCache(2 );
+
+            cache.Put(1, 1);
+            cache.Put(2, 2);
+            Console.WriteLine(cache.Get(1));       // returns 1
+            cache.Put(3, 3);    // evicts key 2
+            Console.WriteLine(cache.Get(2));       // returns -1 (not found)
+            cache.Put(4, 4);    // evicts key 1
+            Console.WriteLine(cache.Get(1));       // returns -1 (not found)
+            Console.WriteLine(cache.Get(3));       // returns 3
+            Console.WriteLine(cache.Get(4));
 
             Console.ReadKey();
         }
