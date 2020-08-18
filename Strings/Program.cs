@@ -18,14 +18,17 @@ namespace Strings
             //Console.WriteLine(isSubstring);
 
             //****3. Trie ****//
-            Trie trie = new Trie();
-            trie.Insert("apple");
-            trie.Insert("bat");
-            Console.WriteLine(trie.Search("apple"));
-            Console.WriteLine(trie.Search("app"));
-            Console.WriteLine(trie.StartsWith("app")); // returns true
-            trie.Insert("app");
-            Console.WriteLine(trie.Search("app"));
+            //Trie trie = new Trie();
+            //trie.Insert("apple");
+            //trie.Insert("bat");
+            //Console.WriteLine(trie.Search("apple"));
+            //Console.WriteLine(trie.Search("app"));
+            //Console.WriteLine(trie.StartsWith("app")); // returns true
+            //trie.Insert("app");
+            //Console.WriteLine(trie.Search("app"));
+
+            //****4. printStringSinusoidally ****//
+            PrintStringSinuosidal.printStringSinusoidally("Google Worked");
             Console.ReadKey();
         }
     }

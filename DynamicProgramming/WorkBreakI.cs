@@ -6,6 +6,24 @@ namespace DynamicProgramming
 {
     public class WorkBreakI
     {
+        public bool WordBreakDP(string s, IList<string> wordDict)
+        {
+            var hashSet = new HashSet<string>(wordDict);
+            int len = s.Length;
+            bool[] f = new bool[len + 1];
+            f[0] = true;
+            for (int i = 0; i <= s.Length; i++)
+            {
+                for (int j = 0; j < i; j++)
+                    if (f[j] && hashSet.Contains(s.Substring(j, i - j)))
+                    {
+                        f[i] = true;
+                        break;
+                    }
+            }
+            return f[len];
+        }
+         
         public bool WordBreak(string s, IList<string> wordDict)
         {
             var hashSet = new HashSet<string>(wordDict);

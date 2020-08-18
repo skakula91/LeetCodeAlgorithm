@@ -93,9 +93,16 @@ namespace AlgorithmPart2
 
             //** 14. K Closest Points to Origin **//
             // use min heap of size k - revisit
-            int[][] points = {new int[] {1, 3}, new int[] {-2, 2}};
-            var closestPoints = new TopKClosestpoints().KClosest(points, 1);
+            //int[][] points = {new int[] {1, 3}, new int[] {-2, 2}};
+            //var closestPoints = new TopKClosestpoints().KClosest(points, 1);
             //Console.WriteLine(intervals);
+
+            //** 15. Combinations of length K **//
+            var combinations = new Combinations().GenerateCombination("abcde", 4);
+            foreach (var s in combinations)
+            {
+                Console.WriteLine(s);
+            }
             Console.Read();
         }
     }
