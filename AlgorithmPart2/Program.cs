@@ -98,8 +98,16 @@ namespace AlgorithmPart2
             //Console.WriteLine(intervals);
 
             //** 15. Combinations of length K **//
-            var combinations = new Combinations().GenerateCombination("abcde", 4);
-            foreach (var s in combinations)
+            // var combinations = new Combinations().GenerateCombination("abcde", 4);
+            //foreach (var s in combinations)
+            //{
+            //    Console.WriteLine(s);
+            //}
+
+            //** 16. Find Right Interval **//
+            int[][] input = {new int[] {3, 4}, new int[] {2, 3}, new int[] {1, 2}};
+            var resultFindRight = new FindRightInterval().FindRight(input);
+            foreach (var s in resultFindRight)
             {
                 Console.WriteLine(s);
             }

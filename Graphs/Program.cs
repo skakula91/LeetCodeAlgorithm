@@ -73,9 +73,14 @@ namespace Graphs
             //var lst = new AllPathSourcetoTarget().AllPathsSourceTarget(graph);
 
             //14. Rotten oranges
-            int[][] M = { new int[] {2,1,1}, new int[] {1,1,0 }, new int[] {0,1,1} };
-            int time = new RottenOranges().OrangesRotting(M);
-            Console.WriteLine(time);
+            //int[][] M = { new int[] {2,1,1}, new int[] {1,1,0 }, new int[] {0,1,1} };
+            //int time = new RottenOranges().OrangesRotting(M);
+            //Console.WriteLine(time);
+
+            //15. Largest Component Size by Common Factor
+            int[] A = new int[] { 20, 50, 9, 63};
+            int components = new LargestComponenet().LargestComponentSize(A);
+            Console.WriteLine(components);
             Console.Read();
         }
     }

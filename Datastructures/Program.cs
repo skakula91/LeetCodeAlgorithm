@@ -108,19 +108,48 @@ namespace Datastructures
             //var node = new ConstructBinaryTree().BuildTree(preorder, inorder);
 
             //9. LRU cache
-            //int[] preorder = { 3, 9, 20, 15, 7 };
-            LRUCache cache = new LRUCache(2 );
+            //LRUPractice cache = new LRUPractice(2);
 
-            cache.Put(1, 1);
-            cache.Put(2, 2);
-            Console.WriteLine(cache.Get(1));       // returns 1
-            cache.Put(3, 3);    // evicts key 2
-            Console.WriteLine(cache.Get(2));       // returns -1 (not found)
-            cache.Put(4, 4);    // evicts key 1
-            Console.WriteLine(cache.Get(1));       // returns -1 (not found)
-            Console.WriteLine(cache.Get(3));       // returns 3
-            Console.WriteLine(cache.Get(4));
+            //cache.Put(1, 1);
+            //cache.Put(2, 2);
+            //Console.WriteLine(cache.Get(1));       // returns 1
+            //cache.Put(3, 3);    // evicts key 2
+            //Console.WriteLine(cache.Get(2));       // returns -1 (not found)
+            //cache.Put(4, 4);    // evicts key 1
+            //Console.WriteLine(cache.Get(1));       // returns -1 (not found)
+            //Console.WriteLine(cache.Get(3));       // returns 3
+            //Console.WriteLine(cache.Get(4));
 
+
+            // 10. Reverse a Linked List
+            //ListNode lstNode = null;
+            //LinkedList linkedList = new LinkedList();
+            //lstNode = linkedList.Insert(lstNode, 1);
+            //lstNode = linkedList.Insert(lstNode, 2);
+            //lstNode = linkedList.Insert(lstNode, 4);
+            //var lstNodeResult = new ReverseLinkedList().Reverse(lstNode);
+            //while (lstNodeResult != null)
+            //{
+            //    Console.WriteLine(lstNodeResult.val);
+            //    lstNodeResult = lstNodeResult.next;
+            //}
+
+
+            // 11. Reorder List
+            ListNode lstNode = null;
+            LinkedList linkedList = new LinkedList();
+            lstNode = linkedList.Insert(lstNode, 1);
+            lstNode = linkedList.Insert(lstNode, 2);
+            lstNode = linkedList.Insert(lstNode, 3);
+            lstNode = linkedList.Insert(lstNode, 4);
+            //lstNode = linkedList.Insert(lstNode, 5);
+            //lstNode = linkedList.Insert(lstNode, 6);
+            new ReorderList().Reorder(lstNode);
+            while (lstNode != null)
+            {
+                Console.WriteLine(lstNode.val);
+                lstNode = lstNode.next;
+            }
             Console.ReadKey();
         }
     }
