@@ -7,8 +7,8 @@ namespace AlgorithmPart2
     {
         static void Main(string[] args)
         {
-            //** 1. Towers of Hanoii **//
-            //TowersOfHanoii.Towers(3, 'a','b','c');
+            // **1.Towers of Hanoii **//
+            //TowersOfHanoii.Towers(3, '1', '2', '3');
 
             //** 2. Permutations **//
             //int[] a = { 1, 2, 3 };
@@ -105,12 +105,21 @@ namespace AlgorithmPart2
             //}
 
             //** 16. Find Right Interval **//
-            int[][] input = {new int[] {3, 4}, new int[] {2, 3}, new int[] {1, 2}};
-            var resultFindRight = new FindRightInterval().FindRight(input);
-            foreach (var s in resultFindRight)
-            {
-                Console.WriteLine(s);
-            }
+            //int[][] input = {new int[] {3, 4}, new int[] {2, 3}, new int[] {1, 2}};
+            //var resultFindRight = new FindRightInterval().FindRight(input);
+            //foreach (var s in resultFindRight)
+            //{
+            //    Console.WriteLine(s);
+            //}
+
+            //** 17. Subset Product Less Than K **//
+            //int[] a = {1,2,3 };
+            //var result = new SubsetProductLessThanK().NumSubarrayProductLessThanK(a, 6);
+            //Console.WriteLine(result);
+
+            //** 18. Complement of Base 10 Integer **//
+            var result = new BitWiseComplement().BitwiseComplement(5);
+            Console.WriteLine(result);
             Console.Read();
         }
     }

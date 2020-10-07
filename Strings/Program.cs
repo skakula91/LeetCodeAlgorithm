@@ -48,8 +48,21 @@ namespace Strings
             //Console.WriteLine(streamChecker.query('l'));          // return true, because 'kl' is in the wordlist
 
             //****5. Most Common Word ****//
-            var result = new MostCommonWord().MostCommon("Bob hit a ball, the hit BALL flew far after it was hit.", new string[] { "hit" });
-            Console.WriteLine(result);
+            //var result = new MostCommonWord().MostCommon("Bob hit a ball, the hit BALL flew far after it was hit.", new string[] { "hit" });
+            //Console.WriteLine(result);
+
+            //****6. Substring Match ****//
+            //var result = SubstringMatching.Substring();
+            //foreach (var s in result)
+            //{
+            //    Console.WriteLine(s);
+            //}
+
+            //****7. Partition Labels ****//
+            //var result = new PartitionLabels().PartitionLabelsI("ababcbacadefegdehijhklij");
+
+            //****8. Maximum Number of Non-Overlapping Substrings ****//
+            var result = new MaxNumOfSubstrings().MaxNumOfSubstringsI("abbaccd");
             Console.ReadKey();
         }
     }

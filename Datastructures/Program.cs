@@ -136,20 +136,28 @@ namespace Datastructures
 
 
             // 11. Reorder List
-            ListNode lstNode = null;
-            LinkedList linkedList = new LinkedList();
-            lstNode = linkedList.Insert(lstNode, 1);
-            lstNode = linkedList.Insert(lstNode, 2);
-            lstNode = linkedList.Insert(lstNode, 3);
-            lstNode = linkedList.Insert(lstNode, 4);
-            //lstNode = linkedList.Insert(lstNode, 5);
-            //lstNode = linkedList.Insert(lstNode, 6);
-            new ReorderList().Reorder(lstNode);
-            while (lstNode != null)
-            {
-                Console.WriteLine(lstNode.val);
-                lstNode = lstNode.next;
-            }
+            //ListNode lstNode = null;
+            //LinkedList linkedList = new LinkedList();
+            //lstNode = linkedList.Insert(lstNode, 1);
+            //lstNode = linkedList.Insert(lstNode, 2);
+            //lstNode = linkedList.Insert(lstNode, 3);
+            //lstNode = linkedList.Insert(lstNode, 4);
+            ////lstNode = linkedList.Insert(lstNode, 5);
+            ////lstNode = linkedList.Insert(lstNode, 6);
+            //new ReorderList().Reorder(lstNode);
+            //while (lstNode != null)
+            //{
+            //    Console.WriteLine(lstNode.val);
+            //    lstNode = lstNode.next;
+            //}
+
+
+            //12. Delete Node in a BST
+            BNode bnode = null;
+            BinaryTree bTree = new BinaryTree();
+            bnode = bTree.Insert(bnode, 1);
+            bnode = bTree.Insert(bnode, 2);
+            var result = new DeleteNodeBST().DeleteNode(bnode, 1);
             Console.ReadKey();
         }
     }

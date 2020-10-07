@@ -118,9 +118,25 @@ namespace AlgorithmPart1
             //}
 
             //****24.Hamming Distance****//
-            var result = new HammingDistance().Distance(1,4);
-            Console.WriteLine(result);
-            
+            //var result = new HammingDistance().Distance(1,4);
+            //Console.WriteLine(result);
+
+            //****25.Largest Time for Given Digits****//
+            //int[] input = new int[]{0,0,3,0};
+            //var result = new LargestTimeFromDigits().LargestTime(input);
+            //Console.WriteLine(result);
+
+            //****26.Meeting Rooms****//
+            //int[][] intervals = { new int[] { 1, 3 }, new int[] { 2, 6 }, new int[] { 8, 10 }, new int[] { 15, 18 } };
+            //var result = new MergeIntervals().Merge(intervals);
+
+            //****27.Insert Interval****//
+            //int[][] intervals = { new int[] { 1, 3 }, new int[] { 2, 6 }, new int[] { 8, 10 }, new int[] { 15, 18 } };
+            //int[] newInterval = new int[] {2, 5};
+            //var result = new InsertInterval().Insert(intervals,newInterval);
+
+            //****28.binary conversion****//
+            new BinaryConvert().Convert1(2);
             Console.Read();
         }
     }

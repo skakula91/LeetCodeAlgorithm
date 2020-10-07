@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Graphs
 {
@@ -78,9 +79,15 @@ namespace Graphs
             //Console.WriteLine(time);
 
             //15. Largest Component Size by Common Factor
-            int[] A = new int[] { 20, 50, 9, 63};
-            int components = new LargestComponenet().LargestComponentSize(A);
-            Console.WriteLine(components);
+            //int[] A = new int[] { 20, 50, 9, 63};
+            //int components = new LargestComponenet().LargestComponentSize(A);
+            //Console.WriteLine(components);
+
+            //16. Word Ladder II
+            string beginWord = "hit";
+            string endWord = "cog";
+            string[] wordList = new string[] { "hot", "dot", "dog", "lot", "log", "cog" };
+            var result = new WordLadderII().FindLadders(beginWord,endWord,wordList.ToList());
             Console.Read();
         }
     }
