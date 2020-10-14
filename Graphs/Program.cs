@@ -84,10 +84,23 @@ namespace Graphs
             //Console.WriteLine(components);
 
             //16. Word Ladder II
-            string beginWord = "hit";
-            string endWord = "cog";
-            string[] wordList = new string[] { "hot", "dot", "dog", "lot", "log", "cog" };
-            var result = new WordLadderII().FindLadders(beginWord,endWord,wordList.ToList());
+            //string beginWord = "hit";
+            //string endWord = "cog";
+            //string[] wordList = new string[] { "hot", "dot", "dog", "lot", "log", "cog" };
+            //var result = new WordLadderII().FindLadders(beginWord,endWord,wordList.ToList());
+
+            // 17.Gravity
+            // . is empty space, # is obstacle, F is figure
+            char[][] board = {  new char[] { 'F', 'F', 'F'},
+                                new char[] { '.', 'F', '.'},
+                                new char[] { '.', 'F', 'F'},
+                                new char[] { '#', 'F', '.'},
+                                new char[] { 'F', 'F', '.'},
+                                new char[] { '.', '.', '.'},
+                                new char[] { '.', '.', '#'},
+                                new char[] { '.', '.', '.'}};
+             new GravityMat().Matrix(board);
+            //Console.WriteLine(doesExist);
             Console.Read();
         }
     }
