@@ -12,10 +12,10 @@ namespace Strings
             //Console.WriteLine(isPalindrome);
 
             //****2. Substring KMP ****//
-            //string s = "aaaab";
-            //string pattern = "aab";
-            //bool isSubstring = new SubstringMatch_KMP().SubstringIndex(s, pattern);
-            //Console.WriteLine(isSubstring);
+            string s = "aaaab";
+            string pattern = "aabaabaaa";
+            bool isSubstring = new SubstringMatch_KMP().SubstringIndex(s, pattern);
+            Console.WriteLine(isSubstring);
 
             //****3. Trie ****//
             //Trie trie = new Trie();
@@ -62,7 +62,30 @@ namespace Strings
             //var result = new PartitionLabels().PartitionLabelsI("ababcbacadefegdehijhklij");
 
             //****8. Maximum Number of Non-Overlapping Substrings ****//
-            var result = new MaxNumOfSubstrings().MaxNumOfSubstringsI("abbaccd");
+            //var result = new MaxNumOfSubstrings().MaxNumOfSubstringsI("abbaccd");
+
+            //****9 . Number of Steps to Reduce a Number in Binary Representation to One ****//
+            // var result = new NumSteps().Steps("1101");
+
+            //****10 . Basic calculator II ****//
+            //var result = new BasicCalculatorII().Calculate("3+5 / 2 ");
+
+            //****11 . Min delete frequency ****//
+            // var result = new MinDeletionstoMakeFrequencyofEachLetterUnique().minDelete("example");
+            //Console.WriteLine(result);
+
+            //****12 . Pass Percentage ****//
+            //string[] T = new string[] {"test1a","test2", "test1b","test1c","test3" };
+            //string[] R = new string[] { "Wrong answer", "OK", "Runtime error", "OK", "Time limit exceeded" };
+            //var result = new Solution().solutionI(T,R);
+
+            //****13. Decode Ways ****//
+            //string str = "226";
+            //var result = new DecodeWays().NumDecodings(str);
+
+            //****14. Maximum Number of Occurrences of a Substring ****//
+            //string str = "aababcaab";
+            //var result = new MaxFreq().MaxFreqI(str,2,3,4);
             Console.ReadKey();
         }
     }

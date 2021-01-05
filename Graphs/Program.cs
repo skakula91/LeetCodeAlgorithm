@@ -91,16 +91,32 @@ namespace Graphs
 
             // 17.Gravity
             // . is empty space, # is obstacle, F is figure
-            char[][] board = {  new char[] { 'F', 'F', 'F'},
-                                new char[] { '.', 'F', '.'},
-                                new char[] { '.', 'F', 'F'},
-                                new char[] { '#', 'F', '.'},
-                                new char[] { 'F', 'F', '.'},
-                                new char[] { '.', '.', '.'},
-                                new char[] { '.', '.', '#'},
-                                new char[] { '.', '.', '.'}};
-             new GravityMat().Matrix(board);
+            //char[][] board = {  new char[] { 'F', 'F', 'F'},
+            //                    new char[] { '.', 'F', '.'},
+            //                    new char[] { '.', 'F', 'F'},
+            //                    new char[] { '#', 'F', '.'},
+            //                    new char[] { 'F', 'F', '.'},
+            //                    new char[] { '.', '.', '.'},
+            //                    new char[] { '.', '.', '#'},
+            //                    new char[] { '.', '.', '.'}};
+            // new GravityMat().Matrix(board);
             //Console.WriteLine(doesExist);
+
+            // 18. Connections
+            //int[][] connections = {  new int[] {0,1,1},
+            //                    new int[] { 1,2,4},
+            //                    new int[] { 1,3,6},
+            //                    new int[] { 3, 4, 5},
+            //                    new int[]{2,4,1 }};
+            //var result = new KruskalMST().MSTKruskal(5, connections);
+
+            // 19. Shortest Bridge
+            //int[][] M = { new int[] { 0,1 }, new int[] { 1, 0 }};
+            // var result = new ShortestBridge().ShortestBridgeI(M);
+
+            // 20.Number of Islands II
+            int[][] M = { new int[] { 0,0 }, new int[] { 0, 1 }, new int[] { 1, 2 } , new int[] { 1, 2 } };
+            var result = new NumberofIslandsII().NumIslands2(3,3,M);
             Console.Read();
         }
     }

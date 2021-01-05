@@ -49,13 +49,23 @@ namespace DynamicProgramming
             //Console.WriteLine(distance);
 
             // 10. Word Break
-            List<string> dict = new List<string>() { "leet", "code" };
-            bool isPossible = new WorkBreakI().WordBreakDP("leetcode", dict);
-            Console.WriteLine(isPossible);
+            //List<string> dict = new List<string>() { "leet", "code" };
+            //bool isPossible = new WorkBreakI().WordBreakDP("leetcode", dict);
+            //Console.WriteLine(isPossible);
 
             // 11. Detectcapital
             //bool hasCycle = new DetectCaptial().DetectCapitalUse("waHaha");
             //Console.WriteLine(hasCycle);
+
+            // 12. Coin Change2
+            //int[] input = new int[] { 1, 2, 5 };
+            //var paths = new CoinChange2().Change(5,input);
+            //Console.WriteLine(paths);
+
+            // 13. Minimum Difficulty of a Job Schedule
+            int[] input = new int[] { 6, 5, 4, 3, 2, 1 };
+            var min = new MinJobDifficulty().MinDifficulty(input,2);
+            Console.WriteLine(min);
             Console.Read();
         }
     }

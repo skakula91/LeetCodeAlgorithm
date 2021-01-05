@@ -25,21 +25,18 @@ namespace SortingAlgorithms
             {
                 if (num >= maxHeap[0]) //it belongs to minheap, and there is enough space
                 {
-                    minHeap.Insert(0, num);
-                    Heapify_min(0);
+                    Insert_min(num);
                 }
                 else
                 {
-                    minHeap.Insert(0, maxHeap[0]);
+                    Insert_min(maxHeap[0]);
                     maxHeap.RemoveAt(0);
-                    Heapify_min(0);
-                    maxHeap.Insert(0, num);
-                    Heapify_max(0);
+                    Insert_max(num);
                 }
             }
             else if (maxHeap.Count == minHeap.Count)
             {
-                if (num <= maxHeap[0]) //it belongs to minheap, but there is no enough space
+                if (num >= maxHeap[0] && num < minHeap[0]) //it belongs to minheap, but there is no enough space
                 {
                     maxHeap.Insert(0, num);
                     Heapify_max(0);
@@ -47,15 +44,31 @@ namespace SortingAlgorithms
                 }
                 else //it belongs to maxheap and there is enough space
                 {
-                    maxHeap.Insert(0, minHeap[0]);
+                    Insert_max(minHeap[0]);
                     minHeap.RemoveAt(0);
-                    Heapify_max(0);
-                    minHeap.Insert(0, num);
-                    Heapify_min(0);
+                    Insert_min(num);
                 }
             }
         }
+        public void Insert_max(double data)
+        {
+            maxHeap.Add(data);
+            int count = maxHeap.Count;
+            for (int i = count / 2; i >= 0; i--)
+            {
+                Heapify_max(i);
+            }
+        }
 
+        public void Insert_min(double data)
+        {
+            minHeap.Add(data);
+            int count = minHeap.Count;
+            for (int i = count / 2; i >= 0; i--)
+            {
+                Heapify_min(i);
+            }
+        }
         public double FindMedian_val()
         {
             int count = minHeap.Count + maxHeap.Count;

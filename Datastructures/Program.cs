@@ -153,11 +153,39 @@ namespace Datastructures
 
 
             //12. Delete Node in a BST
-            BNode bnode = null;
-            BinaryTree bTree = new BinaryTree();
-            bnode = bTree.Insert(bnode, 1);
-            bnode = bTree.Insert(bnode, 2);
-            var result = new DeleteNodeBST().DeleteNode(bnode, 1);
+            //BNode bnode = null;
+            //BinaryTree bTree = new BinaryTree();
+            //bnode = bTree.Insert(bnode, 1);
+            //bnode = bTree.Insert(bnode, 2);
+            //var result = new DeleteNodeBST().DeleteNode(bnode, 1);
+
+            //13. Unique Binary Search Trees II
+            //var result = new UniquePathsII().GenerateTrees(3);
+
+            // 14. Odd Even Linked List
+            //ListNode lstNode = null;
+            //LinkedList linkedList = new LinkedList();
+            //lstNode = linkedList.Insert(lstNode, 1);
+            //lstNode = linkedList.Insert(lstNode, 2);
+            //lstNode = linkedList.Insert(lstNode, 3);
+            //lstNode = linkedList.Insert(lstNode, 4);
+            //lstNode = linkedList.Insert(lstNode, 5);
+            //lstNode = linkedList.Insert(lstNode, 6);
+            //var lstNodeResult = new OddEvenList().OddEven(lstNode);
+            //while (lstNodeResult != null)
+            //{
+            //    Console.WriteLine(lstNodeResult.val);
+            //    lstNodeResult = lstNodeResult.next;
+            //}
+
+            // 15.IPO
+            //int[] profits = { 1, 2, 3 };
+            //int[] capital = { 0, 1, 1 };
+            //var result = new IPO().FindMaximizedCapital(2,0,profits,capital);
+
+            // 16.The Skyline Problem
+            int[][] buildings = { new int[] { 2, 9,10 }, new int[] { 3, 7 ,15 }, new int[] { 5, 12, 12 }, new int[] { 15, 20 ,10 }, new int[] { 19 ,24 ,8 } };
+            var result = new TheSkyLineProblem().GetSkyline(buildings);
             Console.ReadKey();
         }
     }

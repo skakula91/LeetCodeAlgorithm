@@ -20,13 +20,13 @@ namespace Strings
                 }
                 else
                 {
-                    if(i > 0)
+                    if (i == 0)
                     {
-                        i = 0;
+                        j++;
                     }
                     else
                     {
-                        j++;
+                        i = kmpTable[i - 1];
                     }
                 }
             }
